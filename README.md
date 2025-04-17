@@ -7,12 +7,7 @@
 
 <!-- badges: end -->
 
-<figure>
-<img src="inst/chorrrin-example.gif"
-alt="Example modtest helper in Positron" />
-<figcaption aria-hidden="true">Example <code>modtest</code> helper in
-Positron</figcaption>
-</figure>
+![](inst/chorrrin-example.gif)
 
 The goal of `chorrrin` is to provide helpers (prompts for the [`chores`
 package
