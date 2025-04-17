@@ -117,6 +117,6 @@ Use the following style guide:
 -   Do not return the response in markdown (only include R code)      
 -   Do not return the response in R code chunks              
 -   Do not return the responses using inline code             
--   Add any explanations using roxygen2 comments (i.e. with `#' comment/explanation`)   
--   When documenting a server function, reference the corresponding UI function (and vice versa).      
-    -   For example, `mod_vars_server()` should reference `mod_vars_ui()`.    
+-   Add any explanations using roxygen2 (i.e. with `@details` or `@section`)          
+-   When documenting a server function, reference the corresponding UI function (and vice versa).       
+    -   For example, `mod_vars_server()` should reference `mod_vars_ui()`.      
