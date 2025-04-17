@@ -1,0 +1,25 @@
+Package: chorrrin
+Type: Package
+Title: Shiny Pal Extension
+Version: 0.1.0
+Authors@R: person(
+    "Martin", "Frigaard",
+    role = c("aut", "cre"),
+    email = "mjfrigaard@pm.me",
+    comment = NULL
+  )
+Description: Provides custom helpers to extend the chores package. Markdown 
+    prompts are stored in `inst/` (created with `chores::prompt_new()`) and
+    a call to `chores::directory_load()` in the package's `.onLoad()`, 
+    referencing the extension package's `system.file()`.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+LazyData: true
+Imports: 
+    chores
+Remotes:
+    simonpcouch/chores
+URL: https://github.com/mjfrigaard/chorrrin
+BugReports: https://github.com/mjfrigaard/chorrrin/issues
+RoxygenNote: 7.3.2
