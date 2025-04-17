@@ -26,8 +26,8 @@ Use the following documentation for the `aes()` function from `ggplot2` as an ex
 #' and `cex` to `size`).
 ```
 
-* When documenting a UI function, reference the corresponding server function. 
-	* For example, `mod_vars_ui()` should reference `mod_vars_server()`. 
+* When documenting a UI function, reference the corresponding server function (and vice versa).     
+	* For example, `mod_vars_ui()` should reference `mod_vars_server()`.     
 
 ```r
 mod_vars_ui <- function(id) {
@@ -57,19 +57,13 @@ mod_vars_server <- function(id) {
 }
 ```
 
-* Indicate if returned values are reactive.
-
-* Return responses in `roxygen2` comments (no R code blocks)
-
-* Include 5 blank lines of 'padding' after all responses:
-
-Example: 
+Example documentation for `mod_vars_ui()`: 
 
 ```r
 #' UI for count variables module
 #'
 #' Creates inputs for selecting a grouping variable. This function is designed
-#' to work together with [mod_counts_vars_server()].
+#' to work together with [mod_vars_server()].
 #'
 #' @param id A character string used to identify the namespace for the module.
 #'
@@ -89,9 +83,13 @@ Example:
 #'   vars <- mod_vars_server("vars1")
 #' }
 #'
-#'
-#'
-#'
-#'
+
+
+
+
 ```
 
+
+* Indicate if returned values are reactive.       
+* Return responses in `roxygen2` comments (no R code blocks)      
+* Include 5 blank lines of 'padding' after all responses    
