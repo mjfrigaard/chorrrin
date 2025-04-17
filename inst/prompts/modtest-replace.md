@@ -243,15 +243,16 @@ testthat::describe(
 ```
 
 -   When a module has return values, provide these in the `args` list and wrap them in the `shiny::reactive()` function.
-    -   For example, to test the `mod_scatter_display_server()` function, we provide the `aes_inputs` and `var_inputs` arguments (returned from `mod_aes_input_server()` and `mod_var_input_server()`) as `args = list(var_inputs = reactive(list(<inputs>)), aes_inputs = reactive(list(<inputs>))`.       
+    -   For example, to test the `mod_scatter_display_server()` function, we provide the `aes_inputs` and `var_inputs` arguments (returned from `mod_aes_input_server()` and `mod_var_input_server()`) as:      
+        -   `args = list(var_inputs = reactive(list(<inputs>))`, `aes_inputs = reactive(list(<inputs>))`.       
     -   Use `testthat`'s BDD functions (`describe()` and `it()`) to describe the feature and scenario being tested.
 
-Use the following style guide:\
-\* Limit responses to 80 characters per line\
-\* Place a space before and after `=`\
-\* Only use a single empty line when needed to separate sections\
-\* Use base pipe `|>` (not `%>%`)\
-\* Do not return the response in markdown (only include R code)\
-\* Do not return the response in R code chunks (i.e., no \`\`\`r)\        
-\* Do not return the responses using inline code (i.e., no `code`)\     
-\* Add all explanations in comments (i.e. with`\# comment/explanation\`)
+Use the following style guide:      
+* Limit responses to 80 characters per line     
+* Place a space before and after `=`      
+* Only use a single empty line when needed to separate sections     
+* Use base pipe `|>` (not `%>%`)      
+* Do not return the response in markdown (only include R code)      
+* Do not return the response in R code chunks (i.e., no \`\`\`r)            
+* Do not return the responses using inline code (i.e., no `code`)        
+* Add all explanations in comments (i.e. with `# comment/explanation`)    
