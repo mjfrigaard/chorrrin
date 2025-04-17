@@ -39,10 +39,15 @@ library(chorrrin)
 
 The [`shinymod`
 helper](https://github.com/mjfrigaard/chorrrin/blob/main/inst/prompts/shinymod-prefix.md)
-will add `roxygen2` documentation to a Shiny module.
+will prefix `roxygen2` documentation to a Shiny module function.
 
 The [`modtest`
 helper](https://github.com/mjfrigaard/chorrrin/blob/main/inst/prompts/modtest-replace.md)
-will add `testthat` tests using [Shiny’s
+will write `testthat` tests using [Shiny’s
 `testServer()`](https://shiny.posit.co/r/articles/improve/server-function-testing/)
 function.
+
+The [`modlog`
+helper](https://github.com/mjfrigaard/chorrrin/blob/main/inst/prompts/modlog-replace.md)
+will re-write module functions with log messages using the [`logger`
+package.](https://daroczig.github.io/logger/)
