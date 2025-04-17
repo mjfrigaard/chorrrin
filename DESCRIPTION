@@ -1,7 +1,7 @@
 Package: chorrrin
 Type: Package
 Title: Shiny Pal Extension
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: person(
     "Martin", "Frigaard",
     role = c("aut", "cre"),
