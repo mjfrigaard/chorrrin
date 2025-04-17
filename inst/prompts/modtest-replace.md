@@ -239,5 +239,7 @@ Follow the tidyverse style guide:
   * Use double quotes, not single quotes, for quoting text   
   * Use base pipe `|>` (not `%>%`)   
   * Reference UI/server functions using brackets 	
-  * Do not return the response in markdown (only include R code)      
+  * Do not return the response in markdown (only include R code)  
+  * Do not return the response in R code chunks (i.e., no ```r)     
+  * Do not return the responses using inline code (i.e., no `code`)   
   * Add all explanations in comments (i.e. with `# comment/explanation`)    
