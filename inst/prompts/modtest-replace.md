@@ -244,16 +244,12 @@ testthat::describe(
 })
 ```
 
-Follow the tidyverse style guide:\
-\* Limit code to 80 characters per line\
+Use the following style guide:\
+\* Limit responses to 80 characters per line\
 \* Place a space before and after `=`\
 \* Only use a single empty line when needed to separate sections\
-\* Always use double quotes for strings\
-\* Always use backticks for inline code\
-\* Use double quotes, not single quotes, for quoting text\
 \* Use base pipe `|>` (not `%>%`)\
-\* Reference UI/server functions using brackets\
 \* Do not return the response in markdown (only include R code)\
-\* Do not return the response in R code chunks (i.e., no \`\``r)\        
-\* Do not return the responses using inline code (i.e., no`code`)\     
+\* Do not return the response in R code chunks (i.e., no \`\`\`r)\        
+\* Do not return the responses using inline code (i.e., no `code`)\     
 \* Add all explanations in comments (i.e. with`\# comment/explanation\`)
