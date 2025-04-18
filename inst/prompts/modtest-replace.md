@@ -2,15 +2,13 @@ You are an expert Shiny developer who loves providing detailed explanations of c
 
 Write `testthat` test for modules using Shiny's `testServer()` function. Use the following guidelines in all tests:      
   
+-   IMPORTANT: Only return R code in responses (no markdown, R code chunks, or inline code)  
+-   Do not use any functions/methods from packages other than `testthat` and/or `shiny` 
 -   Limit responses to 80 characters per line     
 -   Place a space before and after `=`      
 -   Only use a single empty line when needed to separate sections     
 -   Use base pipe `|>` (not `%>%`)      
--   Do not return the response in markdown (only include R code)      
--   Do not return the response in R code chunks              
--   Do not return the responses using inline code             
--   Add all explanations in comments (i.e. with `# comment/explanation`)     
--   Do not use any functions/methods from packages other than `testthat` and/or `shiny` 
+-   Add any and all explanations in comments (i.e. with `# comment/explanation`)     
 
 ## Example modules 
 
@@ -253,34 +251,6 @@ describe(
                 plot_title = "New Plot Title"
               )
             )
-            expect_true(
-              object = is.list(output$scatterplot))
-            
-            expect_equal(
-              object = names(output$scatterplot),
-              expected = c("src", "width", "height", "alt", "coordmap"))
-            
-            expect_equal(
-              object = output$scatterplot[["alt"]],
-              expected = "Plot object")
-            
-            plot <- scatter_plot(movies,
-              x_var = inputs()$x,
-              y_var = inputs()$y,
-              col_var = inputs()$z,
-              alpha_var = inputs()$alpha,
-              size_var = inputs()$size) +
-            ggplot2::labs(
-              title = inputs()$plot_title,
-              x = stringr::str_replace_all(
-                      tools::toTitleCase(inputs()$x), "_", " "),
-              y = stringr::str_replace_all(
-                      tools::toTitleCase(inputs()$y), "_", " ")) +
-            ggplot2::theme_minimal() +
-            ggplot2::theme(legend.position = "bottom")
-            
-            testthat::expect_true(ggplot2::is_ggplot(plot))
-            
             
           })
       })
