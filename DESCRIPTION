@@ -1,6 +1,6 @@
 Package: chorrrin
 Type: Package
-Title: Shiny Pal Extension
+Title: R chores Extension Package
 Version: 0.2.1
 Authors@R: person(
     "Martin", "Frigaard",

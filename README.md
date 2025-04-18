@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# chorrrin
+# chorrrin (a chores extension package)
 
 <!-- badges: start -->
 
@@ -9,9 +9,9 @@
 
 ![](inst/chorrrin-example.gif)
 
-The goal of `chorrrin` is to provide helpers (prompts for the [`chores`
+The goal of `chorrrin` is to provide helper prompts for the [`chores`
 package
-addin](https://simonpcouch.github.io/chores/articles/custom.html#extension-packages)).
+addin](https://simonpcouch.github.io/chores/articles/custom.html#extension-packages).
 
 ## Prerequisites
 
